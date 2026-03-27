@@ -11,9 +11,11 @@ $(document).ready(function () {
             $overlay.addClass('open');
             setTimeout(function() {
                 $overlay.hide();
+                $('.navicon').fadeIn(); // Show navicon after envelope is gone
             }, 1000);
         }, 2500); // Adjust timing based on CSS transitions
     });
+
     /***************** Waypoints ******************/
 
     $('.wp1').waypoint(function () {
@@ -81,6 +83,22 @@ $(document).ready(function () {
 
     /***************** Tooltips ******************/
     $('[data-toggle="tooltip"]').tooltip();
+
+    /***************** Nav Transformicon ******************/
+
+    /* When user clicks the Icon */
+    $('.nav-toggle').click(function (event) {
+        $(this).toggleClass('active');
+        $('.header-nav').toggleClass('open');
+        $('body').toggleClass('nav-open');
+        event.preventDefault();
+    });
+    /* When user clicks a link */
+    $('.header-nav li a').click(function () {
+        $('.nav-toggle').removeClass('active');
+        $('.header-nav').removeClass('open');
+        $('body').removeClass('nav-open');
+    });
 
     /***************** Smooth Scrolling ******************/
 
@@ -471,25 +489,3 @@ function updateGuest(_this) {
     guestName.appendChild(formInput); //append input
   }
 }
-
-window.onSpotifyIframeApiReady = (IFrameAPI) => {
-  const element = document.getElementById('spotify-embed');
-  const options = {
-    uri: 'https://open.spotify.com/playlist/6gNJaOCMIWpiYmf7fe6oaw?si=122399ecf08b4fa7', 
-    theme: 'dark',
-    width: '100%',
-    height: '352',
-    frameBorder:"0",
-    allow:"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture",
-    loading:"lazy",
-    scrolling: "no",
-    style:"overflow:hidden"
-  };
-  const callback = (EmbedController) => {
-    EmbedController.addListener('ready', () => {
-        setTimeout(EmbedController.play,1000)
-    });
-  };
-
-  IFrameAPI.createController(element, options, callback);
-};
