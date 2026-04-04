@@ -82,11 +82,9 @@
     <ul class="primary-nav">
         <li><a href="#home">Home</a></li>
         <li><a href="#our-story">Our Story</a></li>
-        <li><a href="#groom-bride">Groom & Bride</a></li>
-        <li><a href="#schedule">Schedule</a></li>
         <li><a href="#rsvp">RSVP</a></li>
-        <li><a href="#love-token">Love Token</a></li>
-        <li><a href="#photo-album">Our Moment</a></li>
+        <li><a href="#photo-album">Photo Album</a></li>
+        <li><a href="#video-bg">Video Playback</a></li>
     </ul>
 </nav>
 
@@ -215,16 +213,19 @@
     <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
-                    </button>
-                    <div class="section-padding">
-                        <h3>Thank you!</h3>
-                        <p>We are glad to see you join us on our big day.</p>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span></button>
+                <div class="rsvp-modal-row">
+                    <div class="rsvp-modal-text">
+                        <h2 class="thank-you-title">Thank You.</h2>
+                        <p class="thank-you-subtitle">We are glad to see you join us on our big day.</p>
+                        <p class="thank-you-cursive">Have a Nice Day.</p>
                         <div id="add-to-cal"></div>
                     </div>
+                    <div class="rsvp-modal-image">
+                        <img src="img/MMM_0482-2.jpg" alt="Couple">
+                    </div>
                 </div>
-            </div><!-- /.modal-content -->
+            </div>
         </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
     <div class="container text-center">
@@ -518,7 +519,9 @@
                         </div>
                         <div id="collapseAccommodation" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingAccommodation">
                             <div class="panel-body">
-                                <p>We have secured a limited number of rooms at MaxOne Ubud Hotel for guests who require assistance finding accommodation in Ubud. If you are one of those guests, please reach out to us in advance.</p>
+                                <p>If you need help finding accommodation in the Ubud area, please let us know by checking the "I need accommodation" section on the RSVP form. <br>
+                                    We will get in touch with you and help book a 2-night stay at MaxOne Hotel @Ubud, which is located at: Jl Raya Pengosekan Ubud Kabupaten Gianyar, Bali, Indonesia<br>
+                                    However, if you plan to book your own accommodation, there are plenty of beautiful places to stay around Ubud, such as ARTOTEL Haniman Ubud, Kandarpa Ubud, etc.</p>
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.7578708039896!2d115.26030757462397!3d-8.52287288633231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23d74555c4625%3A0x2f3f377221b33118!2sMaxOne%20Hotel%20ubud!5e0!3m2!1sid!2sid!4v1771840282446!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                 <div style="padding: 20px;">
                                     <h5><a href="https://maps.app.goo.gl/Bf38XZc82hsBZrzDA" target="_blank">MaxOne Ubud</a></h5>
@@ -540,9 +543,15 @@
                         </div>
                         <div id="collapseLocalArea" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingLocalArea">
                             <div class="panel-body">
-                                <p>The area is rural, and things aren't open all day long - usually restaurants open for lunch between 12 - 2pm, and then later on for dinner. Supermarkets also close during the day, so check their opening times before making a trip - it's a slow paced life.</p>
-                                <p>Nearby to us is a small town called Revel - every Saturday morning they have a wonderful food market. If you wanted to visit this before the Day 2 celebrations, it's recommended! Revel is also lovely for dinners and drinks, although very quiet and opening times often vary - quintessentially french.</p>
-                                <p>There is also a lovely lake nearby, called Lac Saint Ferreol which is perfect for swimming or walking around, with some restaurants surrounding it.</p>
+                                <p>Looking for things to do? Here are our favorite restaurants, cafés, and places to visit in the Ubud area. <br><br>
+                                    🌳 Ubud Places to Go: Recreation<br>
+                                    <a href="https://maps.app.goo.gl/vUMtVrTe3Kt7dHxy6?g_st=i">https://maps.app.goo.gl/vUMtVrTe3Kt7dHxy6?g_st=i</a><br><br>
+
+                                    ☕️ Ubud Places to Go: Brunch & Coffee<br>
+                                    <a href="https://maps.app.goo.gl/68ppjrQSh8ZqmYM38?g_st=i">https://maps.app.goo.gl/68ppjrQSh8ZqmYM38?g_st=i</a><br><br>
+
+                                    🥘 Ubud Places To Go: Food<br>
+                                    <a href="https://maps.app.goo.gl/DCe4QCufTAZiGusQ8?g_st=i">https://maps.app.goo.gl/DCe4QCufTAZiGusQ8?g_st=i</a></p><br><br>
                             </div>
                         </div>
                     </div>
@@ -558,8 +567,25 @@
                         </div>
                         <div id="collapseTransfers" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTransfers">
                             <div class="panel-body">
-                                <p><strong>From Airport to Ubud:</strong> You can easily get to Ubud by ordering a <strong>Grab or Gocar</strong> ride directly from the airport. For a more adventurous option, you can take a public bus from the airport to Ubung Bus Station, then transfer to the Ubud line. You can check the bus schedule at this <a href="https://play.google.com/store/apps/details?id=ngi.muchi.bali&pcampaignid=web_share">link</a></p>
-                                <p><strong>To The Venue:</strong> On the day of the wedding (June 6th, 2026), we will provide transportation from <strong>MaxOne Ubud Hotel</strong> to either the church or Padma Ubud. If you are not staying at MaxOne Ubud Hotel, please arrange to arrive at the hotel and contact our event organizer at this phone number at least one day before the event.</p>
+                                <p><strong>From Airport to Ubud:</strong><br><br>
+                                    You can get to Ubud from the airport by:<br>
+                                    1. <strong>Airport Transfer by Klook</strong><br>
+                                    Pre-book an airport transfer using Klook. Click this <a href="https://www.klook.com/airport-transfers/service/dps-ngurah-rai-bali-international-airport/?msockid=383b5dfe6a756e0705c648e06b656fa6&spm=LanguageCurrencySelectionPopup.SelectCurrency&clickId=03a3833ed2">link</a><br>
+
+                                    2. <strong>Grab</strong><br>
+                                    Go to the Grab lounge in the airport to book your ride.<br>
+
+                                    3. <strong>Taxi</strong><br>
+                                    Metered taxis are available at the airport—simply follow the signs to the designated pickup points.<br>
+
+                                    4. <strong>Bus</strong><br>
+                                    You can take a public bus from the airport to Ubung Bus Station, then transfer to the Ubud line. You can check the bus schedule at this <a href="https://play.google.com/store/apps/details?id=ngi.muchi.bali&pcampaignid=web_share">link</a><br>
+                                </p>
+                                <p><strong>To The Venue:</strong> <br><br>
+                                    Padma Resort Ubud is located in the north of Ubud (a bit outside the busy center), about a 40-minute drive from Ubud Art Market. Please refer to the provided Google Map for the exact location.<br>
+                                    On the day of the wedding, we will provide transportation from <strong>MaxOne Ubud Hotel</strong> to either the church or Padma Ubud. <br>
+                                    If you are not staying at MaxOne Ubud Hotel and need transportation to get to the venue, please arrange to arrive at the hotel and contact our event organizer at this phone number at least one day before the event.
+                                </p>
                             </div>
                         </div>
                     </div>
