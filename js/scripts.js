@@ -55,46 +55,6 @@ $(document).ready(function () {
         }
     });
 
-    /***************** 3D Parallax Scroll Effect ******************/
-    $(window).scroll(function() {
-        var scrollTop = $(window).scrollTop();
-        var windowHeight = $(window).height();
-        
-        // Apply 3D parallax to sections with background images and text
-        $('.hero,.story-section, .introduction-section, .rsvp-section, .love-token-section').each(function() {
-            var $section = $(this);
-            var sectionTop = $section.offset().top;
-            var sectionHeight = $section.outerHeight();
-            
-            // Check if section is in viewport
-            if (scrollTop + windowHeight > sectionTop && scrollTop < sectionTop + sectionHeight) {
-                // Calculate scroll progress through this section (-1 to 1)
-                var progress = ((scrollTop + windowHeight / 2) - (sectionTop + sectionHeight / 2)) / (windowHeight / 2);
-                
-                // 3D effect separation
-                // Background moves slower (parallax)
-                var bgY = progress * 100; // max 100px movement
-                
-                // Text elements pop out with 3D transform
-                var textY = progress * -50; 
-                var rotateX = progress * 5; // Slight 3D rotation
-                
-                // If the section has a specific background element, move it
-                if ($section.find('.swiper-slide').length) {
-                    $section.find('.swiper-slide').css('transform', 'translate3d(0, ' + bgY + 'px, 0)');
-                } else {
-                    $section.css('background-position', 'center ' + (50 + progress * 20) + '%');
-                }
-                
-                // Move text in opposite direction with 3D effect
-                $section.find('.hero-container,.story-image-icon, .groom-box, .bride-box, .groom-box-responsive, .bride-box-responsive, .rsvp-container, .token-box, .header, .event-time, .token-title').css({
-                    'transform': 'perspective(1000px) rotateX(' + rotateX + 'deg) translate3d(0, ' + textY + 'px, 50px)',
-                    'transition': 'transform 0.1s ease-out'
-                });
-            }
-        });
-    });
-
     /***************** Fancybox ******************/
     $('.fancybox').fancybox({
         padding: 4,

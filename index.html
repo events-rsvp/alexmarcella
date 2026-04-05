@@ -112,7 +112,7 @@
     </div>
 </section>
 
-<section id="our-story" class="section-padding story-section" style="background-color: #f7f7f7;">
+<section id="our-story" class="section-padding story-section" style="background-color: rgb(250,250,250);">
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-md-offset-3 text-center">
@@ -130,17 +130,7 @@
     </div>
 </section>
 
-<section id="groom-bride" class="introduction-section" style="background-image: url('img/9ae4a3646adaa712ac95cad5a1b4fd57.jpg'); background-size: cover; background-position: center; min-height: 100vh; display: flex; align-items: center;transform: scale(1.05);">
-    <div class="wp2 groom-box-responsive text-left">
-        <h3 class="intro-label">THE GROOM</h3>
-        <h2 class="names">ALEX SANJAYA<br>PRASETIA</h2>
-        <p class="intro-desc">Son of Widjana & Shinta</p>
-    </div>
-    <div class="wp3 bride-box-responsive text-right">
-        <h3 class="intro-label">THE BRIDE</h3>
-        <h2 class="names">MARCELLA<br>JULIA SHIRA</h2>
-        <p class="intro-desc">Daughter of Djoni & Liu</p>
-    </div>
+<section id="groom-bride" class="introduction-section">
     <div class="container-fluid" >
         <div class="row">
             <div class="col-md-7"></div>
@@ -150,8 +140,7 @@
                 <p class="intro-desc" style="color: #fff;">Daughter of Djoni & Liu</p>
             </div>
         </div>
-        <div class="row filler">
-        </div>
+        <div class="row filler"></div>
         <div class="row">
             <div class="col-md-5 text-left groom-box">
                 <h3 class="intro-label">THE GROOM</h3>
@@ -203,7 +192,7 @@
                 <span class="dot" style="background-color: rgb(54,43,25);"></span>
                 <span class="dot" style="background-color: rgb(0,0,0);"></span>
                 <br>
-                <a href="https://docs.google.com/presentation/d/1soKm13KS_aZ8e6nmzUzTE9-Sh-Gx-Ynhn1VPszrYpmQ/edit?usp=sharing" target="_blank" class="btn-fill btn-sm">[CLICK HERE FOR INSPIRATIONS]</a>
+                <a href="https://docs.google.com/presentation/d/1soKm13KS_aZ8e6nmzUzTE9-Sh-Gx-Ynhn1VPszrYpmQ/edit?usp=sharing" target="_blank" class="btn-fill btn-sm">CLICK HERE FOR INSPIRATIONS</a>
             </div>
         </div>
     </div>
@@ -302,15 +291,12 @@
     </div>
 </section>
 
-<section id="love-token" class="section-padding token-section text-center" style="background-image: url('img/5488cb9d52a97fb64a4272aa1111ad45.jpg');">
+<section id="love-token" class="section-padding token-section text-center">
     <div class="container">
         <div class="text-right">
             <h2 class="token-title">LOVE TOKEN</h2>
             <p class="token-subtitle">For those who want to give gift,<br>you can use the E-Wallet bellow</p>
-            <div class="token-box">
-                <p>BCA a/n Alex Sanjaya Prasetia<br>01234567</p>
-                <button class="btn-fill" onclick="copyToClipboard('01234567')"><i class="fa fa-copy"></i> Copy Number</button>
-            </div>
+            <button class="btn-fill" onclick="copyToClipboard('01234567')"><i class="fa fa-copy"></i>Copy Number</button>
         </div>
     </div>
 </section>
@@ -319,15 +305,24 @@
     <div class="container text-center">
         <p class="title">Enjoy a <span class="title-accent">Nice Day</span> with our playlist!</p>
         <div class="mb-5">
-            <a href="https://open.spotify.com/playlist/0QQcmZq9ZG78FoqwCfFGSh?si=cc0c064ded1e421c" target="_blank">
-                <img src="img/QR_spotify.png" style="width: 150px; border-radius: 10px;">
-            </a>
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0QQcmZq9ZG78FoqwCfFGSh?utm_source=generator" width="80%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div>
     </div>
 </section>
 
+<section id="video-bg" >
+    <div id="bgndVideo" class="player"
+        data-property="{videoURL:'https://youtu.be/unXC118G7r8',containment:'#video-bg',autoPlay:true, mute:true, showControls:false, startAt:10, stopAt:400, opacity:1, loop:true,optimizeDisplay:true}">
+    </div> 
+</section>
+
 <section id="photo-album" class="section-padding">
     <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3 class="header">PHOTO ALBUM</h3>
+            </div>
+        </div>
         <div class="marquee">
             <div class="img-wrap"><a class="fancybox" rel="group" href="img/album/MMM_0016.jpg"><img src="img/album/MMM_0016.jpg" alt=""/></a></div>
             <div class="img-wrap"><a class="fancybox" rel="group" href="img/album/MMM_0198.jpg"><img src="img/album/MMM_0198.jpg" alt=""/></a></div>
@@ -466,17 +461,11 @@
     </div>
 </section>
 
-<section id="video-bg" >
-    <div id="bgndVideo" class="player"
-        data-property="{videoURL:'https://youtu.be/unXC118G7r8',containment:'#video-bg',autoPlay:true, mute:true, showControls:false, startAt:10, stopAt:400, opacity:1, loop:true,optimizeDisplay:true}">
-    </div> 
-</section>
-
 <section id="information" class="section-padding">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h3 class="header">Information</h3>
+                <h3 class="header">INFORMATION</h3>
             </div>
         </div>
         <div class="row">
