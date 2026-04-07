@@ -2,11 +2,22 @@ $(document).ready(function () {
     const params = new URLSearchParams(window.location.search);
 
     /***************** Welcome Modal & Audio ******************/
-    $('#btn-open-invitation').click(function() {
-        $('#modal-welcome').addClass('remove');
+    const envelope = document.getElementById('envelope');
+    const envelope_vertical = document.getElementById('envelope_vertical');
+
+    open_modal=()=>{
+        envelope.play();
+        envelope_vertical.play();
         $('#song')[0].play();
-        $('body').css('overflow', 'auto');
-    });
+        setTimeout(()=>{
+            $('body').css('overflow', 'auto');
+            $('#modal-welcome').addClass('remove');
+        },6000);
+    };
+		if(document.getElementById('modal-welcome')){
+			envelope.addEventListener('click', open_modal);
+			envelope_vertical.addEventListener('click', open_modal);
+		}
 
     /***************** Hero Swiper ******************/
     const swiper = new Swiper('.hero-swiper', {
