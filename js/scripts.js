@@ -9,15 +9,19 @@ $(document).ready(function () {
         envelope.play();
         envelope_vertical.play();
         $('#song')[0].play();
+    };
+    close_modal=()=>{
         setTimeout(()=>{
             $('body').css('overflow', 'auto');
             $('#modal-welcome').addClass('remove');
-        },5000);
-    };
+        },1500)
+    }
     envelope.playbackRate=1.4;
     envelope_vertical.playbackRate=1.4;
 	envelope.addEventListener('click', open_modal);
 	envelope_vertical.addEventListener('click', open_modal);
+	envelope.addEventListener('ended', close_modal);
+	envelope_vertical.addEventListener('ended', close_modal);
 
     /***************** Hero Swiper ******************/
     const swiper = new Swiper('.hero-swiper', {
