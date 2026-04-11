@@ -20,6 +20,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="manifest" href="manifest.json">
     <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="preload">
 
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
     <script>
@@ -66,12 +67,10 @@
 <div class="modal-welcome" id="modal-welcome">
     <div class="modal-welcome-content">
 
-        <!-- <video id="envelope" src="https://github.com/event-rsvp/alexmarcella/raw/refs/heads/master/video/envelope/envelope.m3u8#t=4.99"></video> -->
-        <video id="envelope" width="100%" loading="lazy">
+        <video id="envelope" width="100%" preload="metadata">
             <source src="https://github.com/event-rsvp/alexmarcella/raw/refs/heads/master/video/envelope_720.mp4#t=4.99" type="video/mp4">
         </video>
-        <!-- <video id="envelope_vertical" src="https://github.com/event-rsvp/alexmarcella/raw/refs/heads/master/video/envelope_vertical/envelope_vertical.m3u8#t=4.99"></video> -->
-        <video id="envelope_vertical" width="100%" loading="lazy">
+        <video id="envelope_vertical" width="100%" preload="metadata">
             <source src="https://github.com/event-rsvp/alexmarcella/raw/refs/heads/master/video/envelope_vertical_720.mp4#t=4.99" type="video/mp4">
         </video>
     </div>
@@ -313,15 +312,12 @@
 </section>
 
 <section id="love-token" class="section-padding token-section text-center">
-    <div class="container">
-        <div class="text-right">
-            <h2 class="token-title">WEDDING REGISTRY</h2>
-            <p class="token-subtitle">For those who want to give gift,<br>you can use the E-Wallet bellow</p>
-            <button class="btn-fill" onclick="copyToClipboard('0883257500')"><i class="fa fa-copy"></i>Copy Number</button>
-        </div>
+    <div class="token-overlay">
+        <h2 class="token-title">WEDDING REGISTRY</h2>
+        <p class="token-subtitle">For those who want to give gift,<br>you can use the E-Wallet bellow</p>
+        <button class="btn-fill" onclick="copyToClipboard('0883257500')"><i class="fa fa-copy"></i>Copy Number</button>
     </div>
 </section>
-
 <section id="spotify" class="spotify-section section-padding">
     <div class="container text-center">
         <p class="title">ENJOY A <span class="title-accent">Nice Day</span> WITH OUR PLAYLIST!</p>
