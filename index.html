@@ -17,7 +17,6 @@
     <meta property="og:title" content="RSVP - Alex & Marcella">
     <meta property="og:description" content="SATURDAY, JUNE 6, 2026 THE WEDDING OF ALEX & MARCELLA">
     <meta property="og:type" content="website">
-	<meta name="viewport" content="width=0; height=0; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="manifest" href="manifest.json">
     <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
@@ -65,8 +64,12 @@
 
 <div class="modal-welcome" id="modal-welcome">
     <div class="modal-welcome-content">
-        <video id="envelope" src="https://github.com/event-rsvp/alexmarcella/raw/refs/heads/master/video/envelope.m3u8#t=4.99" width="100%" controls autoplay></video>
-        <video id="envelope_vertical" width="100%" src="https://github.com/event-rsvp/alexmarcella/raw/refs/heads/master/video/envelope_vertical.m3u8#t=4.99" controls autoplay></video>
+        <video id="envelope" width="100%" loading="lazy">
+            <source src="https://github.com/event-rsvp/alexmarcella/raw/refs/heads/master/video/envelope_720.mp4#t=4.99" type="video/mp4">
+        </video>
+        <video id="envelope_vertical" width="100%" loading="lazy">
+            <source src="https://github.com/event-rsvp/alexmarcella/raw/refs/heads/master/img/envelope_vertical_720.mp4#t=4.99" type="video/mp4">
+        </video>
     </div>
 </div>
 
